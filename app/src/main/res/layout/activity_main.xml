@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.scarnesdice.MainActivity">
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="10dp"
+android:orientation="horizontal">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="YourScore: "
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/textUserScore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/_0"
+    android:textSize="20sp" />
+</LinearLayout>
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="10dp"
+android:orientation="horizontal">
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:text="Computer Score: "
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/textCompScore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/_0"
+    android:textSize="20sp" />
+</LinearLayout>
+
+<ImageView
+android:id="@+id/imageView"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+app:srcCompat="@drawable/dice1"
+    />
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="5dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Dice Value is:"
+    android:textSize="20sp"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/DiceScore"
+    android:id="@+id/DiceS"
+    android:textSize="20sp"
+    android:layout_marginLeft="10dp"
+    />
+</LinearLayout>
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="10dp"
+android:layout_gravity="center_horizontal">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Roll"
+    android:id="@+id/rollBtn"/>
+
+<Button
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hold"
+    android:id="@+id/holdBtn"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Reset"
+    android:id="@+id/resetBtn"/>
+</LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
